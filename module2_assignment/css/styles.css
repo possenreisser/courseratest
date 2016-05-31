@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #888	;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.75em;
+	color: white;
+	text-align: center;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.25em;
+	text-align: center;
+	width: 90%;
+	margin-left: 15px;
+	font-family: Helvetica;
+	padding: 40px 15px 40px 15px;
+}
+
+h2 {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 5px;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+}
+
+.section {
+
+	margin: 5px;
+	background-color: #8FFF7B;
+	position: relative;
+	border: 1px solid black;
+}
+
+.row p {
+	margin-top: 40px;
+}
+
+.titlesection {
+	position: absolute;
+	top: -1px;
+	right: -1px;
+	border: 1px solid black;
+}
+
+/******* Desktop ********/
+@media (min-width: 992px) {
+	.col-lg {
+		float: left;
+		width: 33.33%;
+	}
+
+}
+
+/******* Tablet ********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-50, .col-md-100 {
+		float: left;
+	}
+
+	.col-md-50 {
+		width: 50%;
+	}
+	.col-md-100 {
+		width: 100%;
+	}
+}
+
+/******* Mobile ********/
+@media (max-width: 767px) {
+	.col-sd {
+		float: left;
+		width: 100%;
+	}
+}
